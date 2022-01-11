@@ -1,7 +1,9 @@
 # ZipCode
 
-Group #11
+<h1>Group #11</h1>
 
-Kristy Delacruz
-Leard Kelmendi
-Yankang Xue
+<li>
+    <ul>Kristy Delacruz</ul>
+    <ul>Leard Kelmendi</ul>
+    <ul>Yankang Xue</ul>
+</li>
