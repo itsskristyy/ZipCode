@@ -1,6 +1,6 @@
 # ZipCode
 
-<h1>Group #11</h1>
+<h2>Group #11</h2>
 
 <ul>
     <li>Kristy Delacruz</li>
