@@ -8,37 +8,44 @@ export default function Cell(props){
             <ul style={styles.tableStyle}>
                 {Object.keys(props.info).map((k) => <li key={k} style={styles.rowStyle}>{`${k}: ${props.info[k]}`}</li>)}
             </ul>
-
         </div>
     )
-
-
-
 }
 
 const styles = {
     cellStyle:{
-        width: "100%",
-        textAlign: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
         fontFamily:"sans-serif",
-        margin: "1 rem"
-
-    },
+        display: "block",
+        width: "500px"
+     },
     titleStyle:{
         fontFamily:"sans-serif",
         fontSize: "20px",
         paddingTop: "10px",
         paddingBottom: "10px",
+        paddingLeft: "40px",
         backgroundColor: "#7D7D7D",
-        color: "white"
+        color: "white",
+        borderRadius: "5px 5px 0px 0px"
     },
     tableStyle:{
-        paddingRight: "300px"
+        marginLeft: "auto",
+        marginRight: "auto",
+        paddingLeft: "70px",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        border: "1px solid grey",
+        borderRadius: "0px 0px 5px 5px",
+        marginTop: "-20px"
+
+
     },
     rowStyle:{
-
-
-
+        textAlign: 'justify',
+        padding: "3px",
+        fontSize: "18px"
     }
 
 }

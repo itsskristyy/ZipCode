@@ -7,12 +7,16 @@ const sampleData = [{"RecordNumber":"9467","Zipcode":"11356","ZipCodeType":"STAN
 
 
 function App() {
-  const [data, setData] = useState(sampleData)
+  const [data, setData] = useState(sampleData) // need to be linkd to queryZipcode function
+
+
 
   return (
     <div className="App">
       <header className="App-header">
       </header>
+      {/* Navbar goes here */}
+      {/* search bar goes here (calls queryzipcode function)*/} 
       <InfoTable data={data}/>
     </div>
   );
