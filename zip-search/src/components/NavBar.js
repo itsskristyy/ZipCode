@@ -5,11 +5,17 @@ class Navbar extends React.Component {
     return (
       <div>
       <nav className = "NavbarItems">
+
+
+
         <h1 style={styles.barlogo}> Zip Code Search </h1>
         </nav>
-        <div style = {styles.buttonreset}>
-        <button onClick={() => window.location.reload(false)}>Click to reload!</button>
-        </div>
+        <button style = {styles.buttonreset} onClick={() => window.location.reload(false)}>Click to reset the page!</button>
+
+
+
+
+
         </div>
 
 
@@ -29,16 +35,25 @@ const styles = {
         backgroundColor: '#000000',
         color: 'white',
         fontSize: "30px",
-        paddingTop: "50px",
-        paddingBottom: "50px",
-         marginTop: 0,
+        paddingTop: "40px",
+        paddingBottom: "40px",
+        margin: -8,
+
+
      },
 
      buttonreset:{
-       display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-     },
+       textAlign: 'center',
+       fontSize: "13px",
+       position: 'absolute',
+       top: 75,
+       alignSelf: 'flex-end',
+       right: 40,
+
+
+
+
+      },
 
 
 }

@@ -29,11 +29,12 @@ class SearchBar extends React.Component { //search function which handles if inp
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>
+                <label style = {styles.inputButton}>
                     Zip Code:
                     <input type="text" value={this.state.value} onChange={this.handleChange} />
+                    <input type="submit" value="Submit" />
                 </label>
-                <input type="submit" value="Submit" />
+
             </form>
         );
     }
@@ -41,11 +42,11 @@ class SearchBar extends React.Component { //search function which handles if inp
 export default SearchBar
 
 const styles = {
-    input:{
+    inputButton:{
         fontFamily:"Open Sans",
-        backgroundColor: '#000000',
-        color: 'white',
-        fontSize: "30px",
+
+        color: 'black',
+        fontSize: "15px",
         paddingTop: "50px",
         paddingBottom: "50px",
         display: "flex",
