@@ -21,9 +21,11 @@ class SearchBar extends React.Component { //search function which handles if inp
     }
 
     handleSubmit(event) {
+        event.preventDefault()
         if (!zipCode(this.state.value)) {
             alert(this.state.value + ' is not a zip code.');
         }
+        this.props.setCurSearch(this.state.value)
     }
 
     render() {
@@ -31,7 +33,7 @@ class SearchBar extends React.Component { //search function which handles if inp
             <form onSubmit={this.handleSubmit}>
                 <label style = {styles.inputButton}>
                     Zip Code:
-                    <input type="text" value={this.state.value} onChange={this.handleChange} />
+                    <input type="text" value={this.state.value} onChange={this.handleChange} placeholder='10001'/>
                     <input type="submit" value="Submit" />
                 </label>
 
@@ -44,7 +46,6 @@ export default SearchBar
 const styles = {
     inputButton:{
         fontFamily:"Open Sans",
-
         color: 'black',
         fontSize: "15px",
         paddingTop: "50px",
@@ -52,7 +53,5 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
-
-
      },
    }
