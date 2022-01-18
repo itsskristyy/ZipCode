@@ -4,8 +4,9 @@ import NavBar from "./components/NavBar";
 import SearchBar from "./components/SearchBar";
 import queryZipcode from "./script/queryZipcode";
 
+
 function App() {
-  const [data, setData] = useState(sampleData) // need to be linkd to queryZipcode function
+  const [data, setData] = useState([]) // need to be linkd to queryZipcode function
   const [curSearch, setCurSearch] = useState("10001")
 
 
